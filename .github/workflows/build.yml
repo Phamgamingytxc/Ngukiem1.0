@@ -1,0 +1,29 @@
+name: KiemBayXuatHon
+version: '${project.version}'
+main: vn.tutien.kiemxuat.KiemBayXuatHonPlugin
+api-version: '1.21'
+author: TuTien
+description: Ngự kiếm cơ bản và xuất hồn do thám cho Paper 1.21.11
+commands:
+  tutien:
+    description: Mở menu tu tiên
+    usage: /tutien
+  kiem:
+    description: Bật/tắt ngự kiếm
+    usage: /kiem [bay|tat|tocdo]
+  xuathon:
+    description: Xuất hồn do thám
+    usage: /xuathon
+  thuhon:
+    description: Thu hồn về thân xác
+    usage: /thuhon
+  thanthuc:
+    description: Quét sinh linh xung quanh
+    usage: /thanthuc
+  canhgioi:
+    description: Xem cảnh giới hoặc đặt cảnh giới (admin)
+    usage: /canhgioi [1-9]
+permissions:
+  kiemxuat.admin:
+    description: Cho phép quản trị cảnh giới và tốc độ
+    default: op
